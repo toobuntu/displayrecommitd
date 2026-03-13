@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: Copyright 2026 Todd Schulman
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+displayrecommitd
+*.[0-9]
+*.[0-9].*
+files*.zip
+files*/
+logs/
+*.o
+*.dSYM/
+.DS_Store

@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: Copyright 2026 Todd Schulman
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Build
+        run: make
+
+      - name: Verify binary
+        run: |
+          file displayrecommitd | grep --quiet Mach-O
+          codesign --verify displayrecommitd
+
+  lint-plist:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Lint plist
+        run: plutil -lint io.github.toobuntu.displayrecommitd.plist
+
+  lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Check formatting
+        run: clang-format --dry-run --Werror displayrecommitd.m
+
+  lint-reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: REUSE compliance
+        uses: fsfe/reuse-action@676e2d560c9a403aa252096d99fcab3e1132b0f5 # v6.0.0

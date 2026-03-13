@@ -1,0 +1,142 @@
+<!--
+SPDX-FileCopyrightText: Copyright 2026 Todd Schulman
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+# displayrecommitd
+
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
+Recovers an external display that wakes to a black screen after battery sleep on macOS.
+
+A no-op `CGBeginDisplayConfiguration` / `CGCompleteDisplayConfiguration` transaction
+forces WindowServer to recommit its display configuration graph,
+re-allocating compositor surfaces against current pipeline instances.
+Automatic, silent, and without any visible display power cycle.
+
+## Table of Contents
+
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [When it fires](#when-it-fires)
+- [Timing](#timing)
+- [Scope and known limitations](#scope-and-known-limitations)
+- [License](#license)
+
+## Background
+
+Connect a USB-C external display to a MacBook via an HDMI or DisplayPort adapter.
+Put the Mac to sleep on battery.
+On wake, the display shows nothing but a functioning cursor.
+
+The cursor works fine — you can move it, activate hot corners, click — but no window content renders.
+This is because the cursor is a hardware overlay driven directly by the GPU scanout engine, independent of the compositor.
+WindowServer is running normally and believes it is painting to the display.
+The compositor surface failed to re-attach.
+
+USB-C adapters carrying display signals use Alt Mode —
+a USB-C specification feature that repurposes some of the connector's wire pairs
+to carry DisplayPort or HDMI signals instead of USB data.
+On battery sleep, macOS power-gates the USB-C controller more aggressively than on AC power.
+This drops the adapter's Alt Mode negotiation state.
+On wake, the display re-enumerates cleanly through IOKit and CoreGraphics reports it as fully healthy,
+but WindowServer's compositor surface is bound to the pre-sleep pipeline instance and is never revalidated.
+
+### Manual workaround
+
+Moving the cursor to a display-sleep hot corner usually recovers the display without this tool.
+The resulting display sleep/wake cycle appears to cause WindowServer to reattach the compositor surface.
+This does not always work —
+in particular, a subsequent sleep/wake on AC power after the compositor failure has been observed not to recover the state.
+
+## Install
+
+Requires Xcode Command Line Tools to build; no build tools are required at runtime.
+
+```sh
+xcode-select --install   # if not already installed
+make
+make install
+```
+
+## Usage
+
+displayrecommitd runs as a LaunchAgent and requires no interaction after installation.
+Logs go to the system log via `NSLog`.
+
+```sh
+# Live stream
+log stream --predicate 'process == "displayrecommitd"'
+
+# After a sleep/wake
+log show --last 5m --predicate 'process == "displayrecommitd"'
+```
+
+Qualifying wake:
+
+```
+[sleep]    battery=yes
+[wake]     battery_sleep=yes battery_wake=yes — arming recommit
+[recommit] CGCompleteDisplayConfiguration succeeded
+```
+
+Non-qualifying wake (AC power at sleep or wake):
+
+```
+[sleep] battery=no
+[wake]  battery_sleep=no battery_wake=yes
+```
+
+To uninstall:
+
+```sh
+make uninstall
+```
+
+To also remove any log file if you configured one:
+
+```sh
+make zap
+```
+
+## When it fires
+
+The recommit fires when battery power is present at both sleep and wake time.
+
+Sleep can be initiated by closing the lid, via the Apple menu, by inactivity timeout,
+or by `pmset sleepnow` — any sleep path is covered.
+The process is suspended during sleep and cannot detect mid-sleep lid state,
+so the trigger is battery at sleep time and battery at wake time.
+The recommit transaction is a no-op on clean wakes —
+it is safe to fire unconditionally on battery wakes.
+
+## Timing
+
+After a qualifying wake, a 2-second quiet timer arms and resets on every `CGDisplayReconfigurationCallback` event.
+The recommit fires only once the display pipeline has been quiet for 2 seconds.
+Firing during display ID reassignment churn (which can last up to ~14 seconds after wake) produces no benefit.
+There is no public API that definitively signals pipeline settled;
+the quiet period is the correct approach at the public API level.
+
+## Scope and known limitations
+
+Tested on MacBook Air M2 (2022) with Dell SP2309W (2008) via USB-C→HDMI, macOS 26 Tahoe.
+Likely affects any Mac with a USB-C connected external display on battery sleep.
+
+The trigger conditions are not fully characterized.
+Battery sleep with clamshell closed during sleep is suspected,
+but the failure is not consistently reproducible even under those conditions.
+The battery condition at both endpoints is the best available proxy and
+is safe to fire on false positives — the CGConfig transaction is a no-op when the compositor is healthy.
+
+The failure has also been observed once when AC power was present at wake.
+The battery condition will not catch that case.
+
+If you reproduce this on other hardware or connection types,
+please open an issue with your Mac model, macOS version, display connection type, and a log.
+
+## License
+
+[GPL-3.0-or-later](LICENSES/GPL-3.0-or-later.txt) Copyright 2026 Todd Schulman
