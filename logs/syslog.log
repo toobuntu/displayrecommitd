@@ -1,0 +1,39 @@
+Timestamp                       (process)[PID]    
+2026-03-11 20:10:36.127340-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:10:37.496625-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:10:37.914337-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:12:50.104418-0400  localhost kernel[0]: PMRD: clamshell closed 0, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:12:50.104442-0400  localhost kernel[0]: PMRD: clamshell closed 0, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:24:47.309016-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:24:47.669150-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:24:49.174901-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:24:49.485527-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:25:47.916793-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:25:48.284420-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:25:48.702262-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:25:49.032783-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:25:50.941919-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:25:51.380247-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:26:09.850465-0400  localhost kernel[0]: PMRD: Clamshell closed
+2026-03-11 20:26:09.850470-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:26:09.850473-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:26:09.850575-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:26:09.850670-0400  localhost kernel[0]: PMRD: sleep reason Clamshell Sleep
+2026-03-11 20:26:09.874941-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:26:11.465680-0400  localhost kernel[0]: PMRD: DarkWake: sleepASAP 1, clamshell closed 1, disabled 0/2, desktopMode 0, ac 0
+2026-03-11 20:26:20.202139-0400  localhost kernel[0]: PMRD: Clamshell opened
+2026-03-11 20:26:20.202146-0400  localhost kernel[0]: PMRD: clamshell closed 0, disabled 0/2, desktopMode 0, ac 0
+2026-03-11 20:26:20.202153-0400  localhost kernel[0]: PMRD: clamshell closed 0, disabled 0/2, desktopMode 0, ac 0
+2026-03-11 20:26:20.202293-0400  localhost kernel[0]: PMRD: clamshell tickled 83 lastSleepReason 101
+2026-03-11 20:26:20.280190-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:26:21.991278-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:26:22.277841-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(2->0)
+2026-03-11 20:38:31.041863-0400  localhost kernel[0]: PMRD: Clamshell closed
+2026-03-11 20:38:31.041878-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:38:31.041888-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:38:31.042123-0400  localhost kernel[0]: PMRD: clamshell closed 1, disabled 0/0, desktopMode 0, ac 0
+2026-03-11 20:38:31.042342-0400  localhost kernel[0]: PMRD: sleep reason Clamshell Sleep
+2026-03-11 20:38:31.057102-0400  localhost kernel[0]: PMRD: setClamShellSleepDisable(0->2)
+2026-03-11 20:38:31.883020-0400  localhost kernel[0]: PMRD: DarkWake: sleepASAP 1, clamshell closed 1, disabled 0/2, desktopMode 0, ac 0
+2026-03-11 20:38:36.066235-0400  localhost kernel[0]: PMRD: DarkWake: sleepASAP 1, clamshell closed 1, disabled 0/2, desktopMode 0, ac 0
+2026-03-11 20:38:36.066430-0400  localhost kernel[0]: PMRD: sleep reason Clamshell Sleep

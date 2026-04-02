@@ -1,0 +1,187 @@
+# displayrecommitd — project memory
+
+## What this is
+
+Single-file Objective-C LaunchAgent.
+No Xcode project.
+Builds with clang directly.
+
+## Problem being solved
+
+macOS fails to re-attach the WindowServer compositor surface to a USB-C external
+display after battery sleep.
+CoreGraphics and IOKit report the display as fully healthy, but window content does not render.
+The hardware cursor works because it is a GPU scanout plane overlay independent of the compositor surface.
+
+## Fix
+
+A no-op CGBeginDisplayConfiguration/CGCompleteDisplayConfiguration transaction
+forces WindowServer to recommit its display configuration graph,
+re-allocating compositor surfaces against the current pipeline.
+No display sleep required, no visible flicker.
+
+## Trigger conditions
+
+Battery power at sleep time. Power source at wake is NOT checked.
+
+The compositor failure is established at sleep time and persists indefinitely
+through maintenance dark wakes regardless of AC connection before user wake.
+Checking battery at wake excludes valid repro paths (confirmed: battery sleep,
+AC wake, compositor still broken).
+
+Clamshell state is NOT checked.
+The process is suspended during sleep and cannot detect whether the lid was closed mid-sleep.
+The recommit transaction is a no-op on a healthy compositor — safe to fire unconditionally on battery-sleep wakes.
+
+**Root cause hypothesis (uncertain):** A non-default display topology at sleep time
+(built-in suppressed, virtual display active) may be the actual causal factor
+rather than battery per se.
+Battery at sleep is the best available user-space proxy.
+An AC-only repro (iMac + LG via DisplayPort→Thunderbolt, BetterDisplay virtual display active)
+supports this hypothesis.
+blackoutd fires the recommit topology-aware: unconditionally on any wake when it had
+the built-in suppressed at sleep, covering the topology case regardless of power source.
+displayrecommitd is the fallback for systems without blackoutd.
+
+## Trigger timing
+
+After qualifying wake, arm a 2s quiet timer reset by every
+CGDisplayReconfigurationCallback event (excluding kCGDisplayBeginConfigurationFlag).
+Fire recommit only after 2s of no events.
+Display ID churn can last up to ~14s; firing mid-churn is ineffective.
+No public API definitively signals pipeline settled; quiet period is correct at the public API level.
+
+## Key files
+
+- displayrecommitd.m — entire implementation
+- io.github.toobuntu.displayrecommitd.plist — LaunchAgent plist
+- Makefile — build, install, uninstall targets
+- .githooks/pre-commit — local dev hook (see Setup below)
+
+## Logging
+
+Via NSLog → system log (no log file).
+
+```sh
+log show --last 5m --predicate 'process == "displayrecommitd"'
+log stream --predicate 'process == "displayrecommitd"'
+```
+
+## Research notes
+
+- displayprobe.m (in blackoutd repo) was the diagnostic tool used to characterise
+  the problem; it is not part of this project
+- pmset displaysleepnow also recovers the display but causes visible flicker;
+  CGConfig no-op is preferable and sufficient
+- Reproduced: MacBook Pro + Dell SP2309W via USB-C→HDMI, macOS 26 Tahoe, battery sleep + clamshell closed
+- Compositor failure confirmed to persist through AC wake (battery sleep → AC plug-in during sleep → AC wake)
+- Third-party report: iMac + LG Ultragear via DisplayPort→Thunderbolt, AC only, BetterDisplay virtual display active
+  (see https://github.com/waydabber/BetterDisplay/discussions/5161)
+- Root cause hypothesis: non-default display topology at sleep time (built-in suppressed or virtual display active)
+  leaves a stale compositor surface binding that CGConfig recommit clears;
+  battery power-gating may lower the threshold but may not be the root cause
+
+---
+
+## Setup
+
+### First-time repo setup
+
+```sh
+git clone git@github.com:toobuntu/displayrecommitd.git
+cd displayrecommitd
+```
+
+Configure git to use the tracked hooks directory:
+
+```sh
+git config core.hooksPath .githooks
+chmod +x .githooks/pre-commit
+```
+
+Install build and lint tools:
+
+```sh
+xcode-select --install          # clang, xcrun clang-format, plutil
+brew install reuse actionlint
+```
+
+### License file
+
+`COPYING` is a hard link to `LICENSES/GPL-3.0-or-later.txt`:
+
+```sh
+ln LICENSES/GPL-3.0-or-later.txt COPYING
+```
+
+A hard link is used rather than a symlink because GitHub's license detection reads file
+content directly and does not follow symlinks — the symlink target path string is not
+a valid license text.
+Both paths refer to the same inode, so there is no drift.
+Git does not preserve hard links; on clone both files are independent copies with
+identical content, which is acceptable for a license file that never changes.
+
+### REUSE annotation
+
+When adding new files, annotate before committing.
+The pre-commit hook will catch unannotated files and print the correct command.
+
+To annotate all non-compliant files (two passes: Objective-C requires `--style=c`,
+other files use auto-detection with `--fallback-dot-license` for unknown extensions):
+
+```sh
+files=$(reuse lint --json \
+  | jq -r '.non_compliant
+    | add(.missing_copyright_info, .missing_licensing_info)
+    | unique[]')
+
+[ -z "$files" ] && exit 0
+
+annotate() {
+    xargs -r reuse annotate \
+        --copyright="Todd Schulman" \
+        --merge-copyrights \
+        --license=GPL-3.0-or-later \
+        --copyright-prefix=spdx-string \
+        "$@"
+}
+
+printf '%s\n' "$files" | grep -E '\.(m|h)$'  | annotate --style=c
+printf '%s\n' "$files" | grep -vE '\.(m|h)$' | annotate --fallback-dot-license
+```
+
+To download or refresh the license text:
+
+```sh
+reuse download --all
+```
+
+---
+
+## Maintenance
+
+### Updating the binary
+
+```sh
+make clean
+make
+make reinstall   # boots out running agent, installs, re-bootstraps
+```
+
+### Checking REUSE compliance
+
+```sh
+reuse lint
+```
+
+### Verifying the installed agent
+
+```sh
+launchctl print gui/$(id -u)/io.github.toobuntu.displayrecommitd
+```
+
+### Removing everything
+
+```sh
+make zap   # unloads agent, removes binary, plist, and any log file
+```

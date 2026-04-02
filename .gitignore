@@ -3,12 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 displayrecommitd
-*.[0-9]
-*.[0-9].*
-files*.zip
-files*/
-logs/
-private/
 *.o
 *.dSYM/
 .DS_Store

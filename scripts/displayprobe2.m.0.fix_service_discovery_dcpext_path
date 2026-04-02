@@ -1,0 +1,384 @@
+// displayprobe2 — IOServiceRequestProbe experiment for USB-C Alt Mode dropout.
+//
+// Background:
+//   When the built-in display is suppressed and a USB-C external display is the
+//   sole active display, the USB-C controller drops Alt Mode negotiation ~30
+//   seconds after wake. This tool experiments with IOServiceRequestProbe as a
+//   way to either prevent the dropout proactively or accelerate recovery reactively.
+//
+// Modes:
+//
+//   --proactive [--delay N]
+//       On wake, find the external display's IOService and call
+//       IOServiceRequestProbe after N seconds (default 10). If N < 30, this
+//       fires before the typical dropout and may prevent it. Watch whether
+//       the hotplug-out event at ~30s still occurs.
+//
+//   --reactive
+//       On every CGDisplayReconfigurationCallback that indicates a display
+//       removal (kCGDisplayRemoveFlag), find the external display's IOService
+//       and call IOServiceRequestProbe immediately. This fires at the moment
+//       of dropout and may accelerate Alt Mode re-establishment.
+//
+//   --list
+//       List IOServices matching the external display at startup and exit.
+//       Use this first to identify which service class and path is correct.
+//
+//   --cgconfig
+//       Baseline mode: fire CGConfig no-op after 2s quiet timer, same as
+//       displayrecommitd. Use to confirm the failure is occurring in a given
+//       test session before comparing against probe modes.
+//
+// Usage:
+//   1. Run --list with display connected to identify service path.
+//   2. Run --proactive to test dropout prevention.
+//   3. Run --reactive to test recovery acceleration.
+//   4. Compare WindowServer logs between modes.
+//
+// Compile:
+//   clang -fobjc-arc -framework Cocoa -framework IOKit \
+//         -o displayprobe2 displayprobe2.m
+
+#import <Cocoa/Cocoa.h>
+#import <IOKit/IOKitLib.h>
+
+static const NSTimeInterval kDefaultProbeDelay = 10.0;
+static const NSTimeInterval kQuietInterval     = 2.0;
+
+// MARK: - Logging
+
+static void emit(NSString *fmt, ...) NS_FORMAT_FUNCTION(1, 2);
+static void emit(NSString *fmt, ...) {
+    va_list args;
+    va_start(args, fmt);
+    NSString *msg = [[NSString alloc] initWithFormat:fmt arguments:args];
+    va_end(args);
+    NSString *stamped = [NSString stringWithFormat:@"%@  %@\n",
+        [[NSDate date] descriptionWithLocale:nil], msg];
+    fputs(stamped.UTF8String, stdout);
+    fflush(stdout);
+}
+
+// MARK: - IOService Discovery
+
+// Returns the io_service_t for the external display's framebuffer or DCP proxy.
+// The caller must IOObjectRelease the returned service.
+// Returns MACH_PORT_NULL if not found.
+//
+// Strategy: iterate IOMobileFramebufferService entries and skip the one
+// corresponding to the built-in display (CGDisplayIsBuiltin). The remaining
+// entry is the external display's service.
+//
+// Note: CGDisplayIOServicePort is deprecated but still functional. We use it
+// to match CGDirectDisplayIDs to IOServices, then cross-reference with
+// IOMobileFramebuffer iteration to find the correct probe target.
+static io_service_t findExternalDisplayService(void) {
+    CGDirectDisplayID displays[16];
+    uint32_t count = 0;
+    CGGetOnlineDisplayList(16, displays, &count);
+
+    for (uint32_t i = 0; i < count; i++) {
+        if (CGDisplayIsBuiltin(displays[i])) continue;
+
+        // Find the IOMobileFramebuffer service for this display ID by
+        // iterating the service plane for framebuffer services and matching
+        // against the display's unit number property.
+        io_iterator_t iter = MACH_PORT_NULL;
+        IOServiceGetMatchingServices(kIOMainPortDefault,
+            IOServiceMatching("IOMobileFramebufferService"), &iter);
+        if (iter == MACH_PORT_NULL) {
+            emit(@"[probe] IOMobileFramebufferService iterator unavailable");
+            break;
+        }
+
+        io_service_t svc;
+        while ((svc = IOIteratorNext(iter)) != MACH_PORT_NULL) {
+            // Read the display unit number from the service registry entry
+            // and compare against the CGDirectDisplayID unit.
+            CFNumberRef unitRef = IORegistryEntryCreateCFProperty(
+                svc, CFSTR("IOFramebufferOpenGLIndex"),
+                kCFAllocatorDefault, 0);
+            if (!unitRef) {
+                // Try alternate property name used on Apple Silicon
+                unitRef = IORegistryEntryCreateCFProperty(
+                    svc, CFSTR("DisplayVendorID"),
+                    kCFAllocatorDefault, 0);
+            }
+            if (unitRef) CFRelease(unitRef);
+
+            // Simpler: use service path to find non-builtin framebuffer.
+            // The built-in display service path contains "DKFB" or "AppleH*"
+            // prefixes; external USB-C displays go through DCPDPDeviceProxy.
+            io_name_t name;
+            IORegistryEntryGetName(svc, name);
+            NSString *svcName = @(name);
+            if ([svcName containsString:@"DP"] ||
+                [svcName containsString:@"HDMI"] ||
+                [svcName containsString:@"USB"]) {
+                IOObjectRelease(iter);
+                return svc;  // caller must release
+            }
+            IOObjectRelease(svc);
+        }
+        IOObjectRelease(iter);
+
+        // Fallback: try DCPDPDeviceProxy which appears in WindowServer logs
+        // at wake for the external display.
+        io_service_t proxy = IOServiceGetMatchingService(kIOMainPortDefault,
+            IOServiceMatching("DCPDPDeviceProxy"));
+        if (proxy != MACH_PORT_NULL) {
+            emit(@"[probe] found DCPDPDeviceProxy");
+            return proxy;
+        }
+    }
+    return MACH_PORT_NULL;
+}
+
+static void listExternalServices(void) {
+    emit(@"[list] searching for external display IOServices...");
+
+    // List all IOMobileFramebufferService entries
+    io_iterator_t iter = MACH_PORT_NULL;
+    IOServiceGetMatchingServices(kIOMainPortDefault,
+        IOServiceMatching("IOMobileFramebufferService"), &iter);
+    if (iter != MACH_PORT_NULL) {
+        io_service_t svc;
+        while ((svc = IOIteratorNext(iter)) != MACH_PORT_NULL) {
+            io_name_t name, path;
+            IORegistryEntryGetName(svc, name);
+            IORegistryEntryGetPath(svc, kIOServicePlane, path);
+            emit(@"[list] IOMobileFramebufferService: %s\n       path: %s", name, path);
+            IOObjectRelease(svc);
+        }
+        IOObjectRelease(iter);
+    } else {
+        emit(@"[list] no IOMobileFramebufferService entries found");
+    }
+
+    // List DCPDPDeviceProxy entries
+    iter = MACH_PORT_NULL;
+    IOServiceGetMatchingServices(kIOMainPortDefault,
+        IOServiceMatching("DCPDPDeviceProxy"), &iter);
+    if (iter != MACH_PORT_NULL) {
+        io_service_t svc;
+        while ((svc = IOIteratorNext(iter)) != MACH_PORT_NULL) {
+            io_name_t name, path;
+            IORegistryEntryGetName(svc, name);
+            IORegistryEntryGetPath(svc, kIOServicePlane, path);
+            emit(@"[list] DCPDPDeviceProxy: %s\n       path: %s", name, path);
+            IOObjectRelease(svc);
+        }
+        IOObjectRelease(iter);
+    } else {
+        emit(@"[list] no DCPDPDeviceProxy entries found");
+    }
+}
+
+// MARK: - Probe
+
+static void probeExternalDisplay(NSString *reason) {
+    emit(@"[probe] attempting IOServiceRequestProbe — reason: %@", reason);
+    io_service_t svc = findExternalDisplayService();
+    if (svc == MACH_PORT_NULL) {
+        emit(@"[probe] external display service not found — display may already be gone");
+        return;
+    }
+    io_name_t name, path;
+    IORegistryEntryGetName(svc, name);
+    IORegistryEntryGetPath(svc, kIOServicePlane, path);
+    emit(@"[probe] probing service: %s\n       path: %s", name, path);
+
+    kern_return_t kr = IOServiceRequestProbe(svc, 0);
+    IOObjectRelease(svc);
+    if (kr == KERN_SUCCESS) {
+        emit(@"[probe] IOServiceRequestProbe succeeded");
+    } else {
+        emit(@"[probe] IOServiceRequestProbe failed: 0x%08x (%s)",
+             kr, mach_error_string(kr));
+    }
+}
+
+// MARK: - Reconfig Callback
+
+static void reconfigCallback(CGDirectDisplayID display,
+                              CGDisplayChangeSummaryFlags flags,
+                              void *userInfo);
+
+// MARK: - Agent
+
+typedef NS_ENUM(NSInteger, Mode) {
+    ModeProactive,
+    ModeReactive,
+    ModeCGConfig,
+};
+
+@interface Agent : NSObject
+- (instancetype)initWithMode:(Mode)mode probeDelay:(NSTimeInterval)delay;
+- (void)displayReconfigured:(CGDirectDisplayID)display
+                      flags:(CGDisplayChangeSummaryFlags)flags;
+@end
+
+@implementation Agent {
+    Mode             _mode;
+    NSTimeInterval   _probeDelay;
+    BOOL             _recommitPending;
+    NSTimer          *_quietTimer;
+}
+
+- (instancetype)initWithMode:(Mode)mode probeDelay:(NSTimeInterval)delay {
+    if (!(self = [super init])) return nil;
+    _mode       = mode;
+    _probeDelay = delay;
+    CGDisplayRegisterReconfigurationCallback(reconfigCallback,
+                                             (__bridge void *)self);
+    NSNotificationCenter *nc = NSWorkspace.sharedWorkspace.notificationCenter;
+    [nc addObserver:self selector:@selector(systemWillSleep:)
+               name:NSWorkspaceWillSleepNotification object:nil];
+    [nc addObserver:self selector:@selector(systemDidWake:)
+               name:NSWorkspaceDidWakeNotification object:nil];
+    return self;
+}
+
+- (void)dealloc {
+    CGDisplayRemoveReconfigurationCallback(reconfigCallback,
+                                           (__bridge void *)self);
+}
+
+- (void)systemWillSleep:(NSNotification *)note {
+    [_quietTimer invalidate];
+    _quietTimer       = nil;
+    _recommitPending  = NO;
+    emit(@"[sleep]");
+}
+
+- (void)systemDidWake:(NSNotification *)note {
+    switch (_mode) {
+    case ModeProactive:
+        emit(@"[wake] proactive mode — scheduling probe in %.0fs", _probeDelay);
+        [NSTimer scheduledTimerWithTimeInterval:_probeDelay
+                                         target:self
+                                       selector:@selector(probeTimerFired)
+                                       userInfo:nil
+                                        repeats:NO];
+        break;
+    case ModeReactive:
+        emit(@"[wake] reactive mode — waiting for hotplug-out event");
+        break;
+    case ModeCGConfig:
+        emit(@"[wake] cgconfig mode — arming quiet timer");
+        _recommitPending = YES;
+        [self resetQuietTimer];
+        break;
+    }
+}
+
+- (void)probeTimerFired {
+    probeExternalDisplay(@"scheduled proactive probe on wake");
+}
+
+- (void)displayReconfigured:(CGDirectDisplayID)display
+                      flags:(CGDisplayChangeSummaryFlags)flags {
+    NSMutableArray *parts = [NSMutableArray array];
+    if (flags & kCGDisplayAddFlag)     [parts addObject:@"add"];
+    if (flags & kCGDisplayRemoveFlag)  [parts addObject:@"remove"];
+    if (flags & kCGDisplayEnabledFlag) [parts addObject:@"enabled"];
+    if (flags & kCGDisplayDisabledFlag)[parts addObject:@"disabled"];
+    if (!parts.count)                  [parts addObject:@"other"];
+    emit(@"[reconfig] display=%u flags=%@", display, [parts componentsJoinedByString:@"|"]);
+
+    if (_mode == ModeReactive && (flags & kCGDisplayRemoveFlag)) {
+        // This is the hotplug-out event — probe immediately.
+        probeExternalDisplay([NSString stringWithFormat:
+            @"reactive probe on hotplug-out of display %u", display]);
+        return;
+    }
+
+    if (_mode == ModeCGConfig && _recommitPending) {
+        if (!(flags & kCGDisplayBeginConfigurationFlag)) {
+            [self resetQuietTimer];
+        }
+    }
+}
+
+- (void)resetQuietTimer {
+    [_quietTimer invalidate];
+    _quietTimer = [NSTimer scheduledTimerWithTimeInterval:kQuietInterval
+                                                  target:self
+                                                selector:@selector(quietTimerFired)
+                                                userInfo:nil
+                                                 repeats:NO];
+}
+
+- (void)quietTimerFired {
+    _quietTimer      = nil;
+    _recommitPending = NO;
+    emit(@"[cgconfig] pipeline quiet — firing CGConfig no-op");
+    CGDisplayConfigRef config;
+    CGError err = CGBeginDisplayConfiguration(&config);
+    if (err != kCGErrorSuccess) {
+        emit(@"[cgconfig] CGBeginDisplayConfiguration error=%d", err);
+        return;
+    }
+    err = CGCompleteDisplayConfiguration(config, kCGConfigureForSession);
+    emit(@"[cgconfig] CGCompleteDisplayConfiguration %@",
+         err == kCGErrorSuccess ? @"succeeded" : @"failed");
+}
+
+@end
+
+static void reconfigCallback(CGDirectDisplayID display,
+                              CGDisplayChangeSummaryFlags flags,
+                              void *userInfo) {
+    [(__bridge Agent *)userInfo displayReconfigured:display flags:flags];
+}
+
+// MARK: - Entry Point
+
+static void usage(void) {
+    fputs("usage: displayprobe2 --list\n"
+          "       displayprobe2 --proactive [--delay N]\n"
+          "       displayprobe2 --reactive\n"
+          "       displayprobe2 --cgconfig\n", stderr);
+}
+
+int main(int argc, const char *argv[]) {
+    @autoreleasepool {
+        if (argc < 2) { usage(); return 1; }
+
+        NSString *modeArg = @(argv[1]);
+
+        if ([modeArg isEqualToString:@"--list"]) {
+            listExternalServices();
+            return 0;
+        }
+
+        Mode mode;
+        NSTimeInterval probeDelay = kDefaultProbeDelay;
+
+        if ([modeArg isEqualToString:@"--proactive"]) {
+            mode = ModeProactive;
+            for (int i = 2; i < argc - 1; i++) {
+                if (strcmp(argv[i], "--delay") == 0) {
+                    probeDelay = atof(argv[i + 1]);
+                }
+            }
+            emit(@"[start] mode=proactive delay=%.0fs", probeDelay);
+        } else if ([modeArg isEqualToString:@"--reactive"]) {
+            mode = ModeReactive;
+            emit(@"[start] mode=reactive");
+        } else if ([modeArg isEqualToString:@"--cgconfig"]) {
+            mode = ModeCGConfig;
+            emit(@"[start] mode=cgconfig (baseline)");
+        } else {
+            usage();
+            return 1;
+        }
+
+        __unused Agent *agent = [[Agent alloc] initWithMode:mode
+                                                 probeDelay:probeDelay];
+        [NSApplication sharedApplication];
+        [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
+        [NSApp run];
+    }
+    return 0;
+}

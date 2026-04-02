@@ -1,0 +1,219 @@
+Timestamp                       (process)[PID]    
+2026-03-11 18:26:58.613121-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:27:11.723982-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:27:59.913251-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:28:07.105531-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:28:11.916375-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:28:13.143689-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:28:19.131327-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:28:19.198633-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:28:35.282332-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:28:36.294668-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:29:09.910504-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:29:16.220992-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:29:36.482669-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:29:36.482685-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:29:52.123343-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:29:52.143810-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:31:20.141938-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:31:20.275291-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:32:47.120930-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:32:47.175859-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:34:18.151649-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:34:18.198412-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:35:47.131279-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:35:47.392616-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:37:17.113075-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:37:17.131113-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:38:46.136280-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:38:46.168367-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:39:55.230124-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:40:05.922958-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:40:17.124338-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:40:17.163524-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:40:20.121182-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:40:59.228967-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:41:09.914957-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:41:21.916048-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:41:45.118193-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:41:45.140287-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:43:14.128164-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:43:14.171534-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:44:47.121672-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:44:47.142179-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:46:16.123631-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:46:16.140668-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:47:45.115593-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:47:45.139837-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:49:14.141430-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:49:14.182708-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:50:45.125940-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:50:45.154516-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:52:16.132927-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:52:16.164196-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:53:48.203879-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:53:48.396291-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:55:18.124549-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:55:18.143251-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:56:39.113461-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:56:39.128327-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:57:09.746019-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:11.766459-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:21.860066-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:24.893524-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:25.906420-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:26.925182-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:41.058616-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:46.092186-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:57.209429-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:57:58.117230-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:57:58.139847-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:58:00.248830-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:01.254982-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:09.910774-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:10.301244-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:11.916487-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:18.353959-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:20.365558-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:21.916248-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:23.386414-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:26.420074-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:26.420145-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:26.420166-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:29.915232-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:41.930139-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:47.158974-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:58:57.972164-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:01.914695-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:01.914718-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:05.001422-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:59:06.158938-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:59:09.035231-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:59:09.045077-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:59:10.831936-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:17.112044-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:59:17.130537-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 18:59:19.912981-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:21.917107-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:25.645687-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 18:59:25.646249-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:26.645980-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 18:59:27.954308-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:00:38.111587-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:00:38.131353-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:01:58.156034-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:01:58.177860-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:03:16.130370-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:03:16.156292-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:04:18.141857-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:04:18.161997-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:05:39.165607-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:05:39.189093-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:05:52.791489-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:05:53.810990-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:06:03.322927-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:06:04.337000-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:07:00.150309-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:07:00.186494-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:08:19.152826-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:08:19.169458-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:08:56.191324-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:08:56.220766-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:09:56.155993-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:09:56.169882-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:11:32.147940-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:11:32.159077-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:13:09.180331-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:13:09.223312-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:13:53.373826-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:13:53.995060-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:13:55.888159-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:13:55.895962-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:15:39.199132-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:15:39.220852-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:17:16.146610-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:17:16.161364-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:18:40.131492-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:18:40.149513-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:20:24.148747-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:20:24.167608-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:21:55.128758-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:21:55.159721-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:23:31.145514-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:23:31.240908-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:24:31.649379-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:24:32.659116-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:25:35.189213-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:25:35.227613-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:27:10.845008-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:27:17.903387-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:27:30.961006-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:27:35.136104-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:27:35.161462-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:27:43.019779-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:27:52.097313-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:11.947028-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:17.978137-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:31.950842-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:32.303934-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:47.019243-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:28:54.391491-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:29:33.004223-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:29:39.194483-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:29:39.205658-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:31:48.137506-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:31:48.159033-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:33:45.135811-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:33:45.158564-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:35:34.164383-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:35:34.199020-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:37:39.132933-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:37:39.147569-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:39:05.156898-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:39:16.116598-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:39:29.132582-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:39:42.144536-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:39:42.157406-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:40:08.168226-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:40:19.944998-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:40:29.944928-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:41:43.138028-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:41:43.151481-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:43:39.162892-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:43:39.185503-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:45:32.160386-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:45:32.200752-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:47:25.164122-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:47:25.207330-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:49:09.143490-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:49:09.160701-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:51:06.371774-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:51:06.410892-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:52:14.002027-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:52:19.009905-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:53:11.135852-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:53:11.159594-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:54:51.011340-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:54:52.019544-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:54:57.145391-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:54:57.165056-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:56:58.139773-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:56:58.173877-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:57:41.012368-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:57:56.114161-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:58:07.168917-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:58:19.202819-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:58:41.946929-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:58:57.975326-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:59:07.147567-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 19:59:07.171141-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 19:59:09.943247-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 19:59:19.941627-0400  localhost kernel[0]: PMRD: power event 14 args 0x0 0x0
+2026-03-11 20:01:33.155558-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 20:01:33.168301-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 20:04:22.232937-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 20:04:22.287423-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 20:05:39.888002-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 20:05:40.901953-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40
+2026-03-11 20:07:45.328799-0400  localhost kernel[0]: PMRD: assertionsUser 0x40->0x41
+2026-03-11 20:07:45.379557-0400  localhost kernel[0]: PMRD: assertionsUser 0x41->0x40

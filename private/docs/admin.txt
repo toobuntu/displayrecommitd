@@ -1,0 +1,45 @@
+# bootstrap the new repo
+gh repo create toobuntu/displayrecommitd --public --description "Recommits external display compositor after battery sleep on macOS" --clone
+
+
+
+tree -aphDF --gitignore -I .git
+
+xcrun clang-format -i --style=llvm --Werror -- displayrecommitd.m
+actionlint --verbose
+reuse lint --json | jq '.summary.compliant'
+
+
+
+ln -s LICENSES/GPL-3.0-or-later.txt COPYING
+pinact run --verify --update
+reuse download --all
+
+plutil -convert xml1 -s -o - io.github.toobuntu.displayrecommitd.plist
+
+# initial commit
+git ls-files |
+  awk '$0 !~ /\.m$/' |
+  xargs reuse annotate --copyright="Todd Schulman" --merge-copyrights --license=GPL-3.0-or-later --copyright-prefix=spdx-string --fallback-dot-license
+# reuse thinks .m files are mandoc, so specify c.
+git ls-files |
+  awk '$0 ~ /\.m$/' |
+  xargs reuse annotate --style=c --copyright="Todd Schulman" --merge-copyrights --license=GPL-3.0-or-later --copyright-prefix=spdx-string --fallback-dot-license
+
+# subsequent maintenance
+git diff --name-status --no-renames upstream/main |
+  awk '$1 != "D" && $2 != "docs/assets/radiola.png" {print $2}' |
+  xargs reuse annotate --copyright "Todd Schulman" --merge-copyrights --license gpl-3.0-or-later --copyright-prefix spdx-string --fallback-dot-license
+
+# date of file creation
+date +Y # new file
+git log --follow --format=%as {$path} | tail -n1 | cut -c-4 # existing files’ year of first commit
+stat -f %SB -t %Y -- {$path} # any file’s birth year, but this can be of very questionable quality, if you know the file landed on your disk at a later date, you changed disks etc.
+
+/usr/bin/networkQuality -c | jq '.responsiveness'
+ls "$(brew --repository)/Library/Homebrew/vendor/portable-ruby/current/bin/ruby"
+plutil -convert json -s -o - ~/Library/LaunchAgents/io.github.toobuntu.blackoutd.plist | jq '.'
+stat -f %Sm -t %Y-%m-%d-%H%M-%S -- /usr/local/bin/blackoutd
+pmset sleepnow; sleep 5; caffeinate -u -t1
+pmset displaysleepnow
+pmset -g log | grep -i -C 1 "Entering Sleep state due to"

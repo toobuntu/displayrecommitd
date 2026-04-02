@@ -1,0 +1,516 @@
+Timestamp                       (process)[PID]    
+2026-03-11 17:40:51.520649-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:40:55.856124-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:40:55.856167-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:40:55.955031-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:41:00.806616-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:41:10.711343-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:10.723054-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:10.899211-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Created MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609237 [System: PrevIdle DeclUser kDisp]
+2026-03-11 17:41:11.158893-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:41:11.195950-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake(0x70070000) lid SMC.OutboxNotEmpty RTP.multi-touch/HID Activity
+2026-03-11 17:41:11.195951-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] WakeDetails: <private>
+2026-03-11 17:41:11.232090-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Released MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609237 [System: PrevIdle DeclUser IPushSrvc kCPU kDisp]
+2026-03-11 17:41:11.336303-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:11.884193-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:41:23.346011-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:23.574673-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:41:24.683921-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:34.346247-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Created MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609357 [System: PrevIdle DeclUser kDisp]
+2026-03-11 17:41:34.423378-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:41:34.511487-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake(0x70070000) lid SMC.OutboxNotEmpty RTP.multi-touch/HID Activity
+2026-03-11 17:41:34.511489-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] WakeDetails: <private>
+2026-03-11 17:41:34.533625-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:34.755202-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:41:34.755613-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Released MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609357 [System: PrevIdle DeclUser kDisp]
+2026-03-11 17:41:35.247777-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:41:35.247810-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  1 because {DesktopMode with AC: 0, assertions 1
+2026-03-11 17:41:35.486039-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:46:19.111074-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:46:28.356712-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:28.799005-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] Wake from Deep Idle [CDNVA] : due to smc.sysState.Wake(0x70070000) lid SMC.OutboxNotEmpty RTP.multi-touch/HID Activity
+2026-03-11 17:46:28.799007-0400  localhost powerd[346]: [com.apple.powerd:sleepWake] WakeDetails: <private>
+2026-03-11 17:46:28.812287-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:28.812392-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Created MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609516 [System: PrevIdle DeclUser kDisp]
+2026-03-11 17:46:28.812742-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:46:28.864057-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:46:28.885839-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process mDNSResponder.469 Released MaintenanceWake "mDNSResponder:maintenance" age:00:00:00  id:55834609516 [System: PrevIdle DeclUser IPushSrvc kCPU kDisp]
+2026-03-11 17:46:29.108203-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:29.160155-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  1 because {DesktopMode with AC: 0, assertions 1
+2026-03-11 17:46:29.375782-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:46:36.406395-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:37.127445-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:46:42.150285-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:42.573023-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:48:21.317311-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:48:21.886411-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:48:22.280000-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:48:22.389733-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 17:48:22.395846-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  1 because {DesktopMode with AC: 0, assertions 1
+2026-03-11 17:48:22.918013-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  0 because {DesktopMode with AC: 0, assertions 0
+2026-03-11 17:48:30.395376-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004dffff) Time:-1 Source:AC
+2026-03-11 17:48:30.395384-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0x90010). Capacity:16 Source:AC
+2026-03-11 17:48:30.395395-0400  localhost powerd[346]: [com.apple.powerd:battery] Power Source change. Source:AC
+2026-03-11 17:48:30.395655-0400  localhost powerd[346]: [com.apple.powerd:battery] EvaluateClamshellSleepState on power source change
+2026-03-11 17:48:30.425239-0400  localhost powerd[346]: [com.apple.powerd:pmSettings] Settings change for power source change to AC Power {
+    "AC Power" =     {
+        DarkWakeBackgroundTasks = 1;
+        "Disk Sleep Timer" = 10;
+        "Display Sleep Timer" = 10;
+        "Hibernate File" = "/var/vm/sleepimage";
+        "Hibernate Mode" = 3;
+        LowPowerMode = 0;
+        PrioritizeNetworkReachabilityOverSleep = 0;
+        "Sleep On Power Button" = 1;
+        "Standby Enabled" = 1;
+        "System Sleep Timer" = 1;
+        TCPKeepAlivePref = 1;
+        TTYSPreventSleep = 1;
+        "Wake On LAN" = 1;
+    };
+    "Battery Power" =     {
+        DarkWakeBackgroundTasks = 1;
+        "Disk Sleep Timer" = 10;
+        "Display Sleep Timer" = 2;
+        "Hibernate File" = "/var/vm/sleepimage";
+        "Hibernate Mode" = 3;
+        LowPowerMode = 0;
+        PrioritizeNetworkReachabilityOverSleep = 0;
+        ReduceBrightness = 1;
+        "Sleep On Power Button" = 1;
+        "Standby Enabled" = 1;
+        "System Sleep Timer" = 1;
+        TCPKeepAlivePref = 1;
+        TTYSPreventSleep = 1;
+        "Wake On LAN" = 0;
+    };
+}
+2026-03-11 17:48:30.429418-0400  localhost powerd[346]: [com.apple.powerd:assertions] EvaluateClamshell. Disable :  1 because {DesktopMode with AC: 1, assertions 0
+2026-03-11 17:48:30.546841-0400  localhost powerd[346]: [com.apple.powerd:batterygauging] HandleBatteryDataUpdate AC change detected run update and action policy
+2026-03-11 17:48:31.492033-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerChime.29187 Created DisplayWake "com.apple.chimeOnAttach" age:00:00:00  id:60129576935 [System: PrevIdle DeclUser DispWake kDisp]
+2026-03-11 17:48:31.496550-0400  localhost powerd[346]: [com.apple.powerd:lowPowerMode] PMH: User preference for custom powermode on battery: 0
+2026-03-11 17:48:31.882719-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process Caffeine.58115 Created PreventUserIdleDisplaySleep "Caffeine prevents sleep" age:00:00:00  id:21474871272 [System: PrevIdle PrevDisp DeclUser DispWake kDisp]
+2026-03-11 17:48:31.894789-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609641 [System: PrevIdle PrevDisp DeclUser SRPrevSleep DispWake kCPU kDisp]
+2026-03-11 17:48:32.102065-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609641 [System: PrevIdle PrevDisp DeclUser DispWake kDisp]
+2026-03-11 17:48:32.384428-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609643 [System: PrevIdle PrevDisp DeclUser SRPrevSleep DispWake kCPU kDisp]
+2026-03-11 17:48:32.664111-0400  localhost powerd[346]: [com.apple.powerd:batterychargingstate] batteryChargingStateRequest received
+2026-03-11 17:48:32.816991-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerChime.29187 Released DisplayWake "com.apple.chimeOnAttach" age:00:00:01  id:60129576935 [System: PrevIdle PrevDisp DeclUser SRPrevSleep kCPU kDisp]
+2026-03-11 17:48:33.133515-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609643 [System: PrevIdle PrevDisp DeclUser kDisp]
+2026-03-11 17:48:33.150829-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609644 [System: PrevIdle PrevDisp DeclUser SRPrevSleep kCPU kDisp]
+2026-03-11 17:48:33.391836-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609644 [System: PrevIdle PrevDisp DeclUser kDisp]
+2026-03-11 17:48:33.397091-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609645 [System: PrevIdle PrevDisp DeclUser SRPrevSleep kCPU kDisp]
+2026-03-11 17:48:33.419688-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609645 [System: PrevIdle PrevDisp DeclUser kDisp]
+2026-03-11 17:49:05.238142-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:49:05.942280-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 17:49:31.072540-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004fffff) Time:-1 Source:AC
+2026-03-11 17:50:24.062559-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0011). Capacity:17 Source:AC
+2026-03-11 17:50:24.129880-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609695 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 17:50:24.150238-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609695 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 17:51:24.035195-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00c7) Time:199 Source:AC
+2026-03-11 17:52:20.061192-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00d1) Time:209 Source:AC
+2026-03-11 17:52:20.061198-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0012). Capacity:18 Source:AC
+2026-03-11 17:52:20.139690-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609718 [System: PrevIdle DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 17:52:20.212179-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609718 [System: PrevIdle DeclUser IntPrevDisp kDisp]
+2026-03-11 17:53:20.031585-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00db) Time:219 Source:AC
+2026-03-11 17:54:20.026810-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00e5) Time:229 Source:AC
+2026-03-11 17:54:29.062515-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ef) Time:239 Source:AC
+2026-03-11 17:54:29.062521-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0013). Capacity:19 Source:AC
+2026-03-11 17:54:29.091485-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609740 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 17:54:29.109062-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609740 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 17:55:29.031914-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00f9) Time:249 Source:AC
+2026-03-11 17:56:29.033238-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ef) Time:239 Source:AC
+2026-03-11 17:56:36.060879-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00e5) Time:229 Source:AC
+2026-03-11 17:56:36.060885-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0014). Capacity:20 Source:AC
+2026-03-11 17:56:36.095027-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609774 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 17:56:36.125629-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609774 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 17:57:36.028599-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ef) Time:239 Source:AC
+2026-03-11 17:58:35.063772-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0015). Capacity:21 Source:AC
+2026-03-11 17:58:35.134802-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609797 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 17:58:35.151369-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609797 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 17:59:35.066088-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00e5) Time:229 Source:AC
+2026-03-11 18:00:25.063075-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00db) Time:219 Source:AC
+2026-03-11 18:00:25.063081-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0016). Capacity:22 Source:AC
+2026-03-11 18:00:25.096570-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609864 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:00:25.138093-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609864 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:01:25.031488-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00d1) Time:209 Source:AC
+2026-03-11 18:02:25.035063-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00db) Time:219 Source:AC
+2026-03-11 18:02:26.065003-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00e5) Time:229 Source:AC
+2026-03-11 18:02:26.065011-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0017). Capacity:23 Source:AC
+2026-03-11 18:02:26.103710-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609940 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:02:26.124173-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609940 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:03:26.031932-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00db) Time:219 Source:AC
+2026-03-11 18:04:04.063375-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00d1) Time:209 Source:AC
+2026-03-11 18:04:04.063387-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0018). Capacity:24 Source:AC
+2026-03-11 18:04:04.097080-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609980 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:04:04.122643-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834609980 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:05:04.057511-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00d2) Time:210 Source:AC
+2026-03-11 18:05:54.094291-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00c8) Time:200 Source:AC
+2026-03-11 18:05:54.094296-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0019). Capacity:25 Source:AC
+2026-03-11 18:05:54.119736-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610033 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:05:54.140273-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610033 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:06:54.063191-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00be) Time:190 Source:AC
+2026-03-11 18:07:30.091053-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b9) Time:185 Source:AC
+2026-03-11 18:07:30.091058-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001a). Capacity:26 Source:AC
+2026-03-11 18:07:30.119980-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610066 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:07:30.134197-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610066 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 18:08:30.061974-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b6) Time:182 Source:AC
+2026-03-11 18:09:02.089213-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b7) Time:183 Source:AC
+2026-03-11 18:09:02.089219-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001b). Capacity:27 Source:AC
+2026-03-11 18:09:02.128627-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610079 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:09:02.165120-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610079 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:10:02.097226-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b4) Time:180 Source:AC
+2026-03-11 18:10:31.093571-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001c). Capacity:28 Source:AC
+2026-03-11 18:10:31.134549-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610095 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:10:31.173744-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610095 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 18:11:31.063670-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b3) Time:179 Source:AC
+2026-03-11 18:12:03.094539-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00b5) Time:181 Source:AC
+2026-03-11 18:12:03.094547-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001d). Capacity:29 Source:AC
+2026-03-11 18:12:03.125831-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610110 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:12:03.176831-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610110 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:13:03.063153-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00af) Time:175 Source:AC
+2026-03-11 18:13:34.094081-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ae) Time:174 Source:AC
+2026-03-11 18:13:34.094088-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001e). Capacity:30 Source:AC
+2026-03-11 18:13:34.113121-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610123 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:13:34.130902-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610123 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:14:34.062500-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ad) Time:173 Source:AC
+2026-03-11 18:15:02.093080-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ae) Time:174 Source:AC
+2026-03-11 18:15:02.093086-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb001f). Capacity:31 Source:AC
+2026-03-11 18:15:02.125884-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610138 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:15:02.171978-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610138 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:16:02.062827-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00ac) Time:172 Source:AC
+2026-03-11 18:16:31.094420-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0020). Capacity:32 Source:AC
+2026-03-11 18:16:31.120529-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610151 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:16:31.133276-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610151 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 18:17:31.061367-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00aa) Time:170 Source:AC
+2026-03-11 18:17:59.094480-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0021). Capacity:33 Source:AC
+2026-03-11 18:17:59.136682-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610162 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:17:59.197438-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610162 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:18:59.063253-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a9) Time:169 Source:AC
+2026-03-11 18:19:29.099681-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0022). Capacity:34 Source:AC
+2026-03-11 18:19:29.162608-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610181 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:19:29.191599-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610181 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:20:29.095639-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a7) Time:167 Source:AC
+2026-03-11 18:20:58.093499-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0023). Capacity:35 Source:AC
+2026-03-11 18:20:58.115391-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610196 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:20:58.127921-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610196 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:21:58.064162-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a5) Time:165 Source:AC
+2026-03-11 18:22:26.093758-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0024). Capacity:36 Source:AC
+2026-03-11 18:22:26.111924-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610212 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:22:26.130844-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610212 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:23:26.061854-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a4) Time:164 Source:AC
+2026-03-11 18:23:56.092822-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a3) Time:163 Source:AC
+2026-03-11 18:23:56.092829-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0025). Capacity:37 Source:AC
+2026-03-11 18:23:56.129656-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610225 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:23:56.153730-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610225 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:25:24.094085-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a1) Time:161 Source:AC
+2026-03-11 18:25:24.094098-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0026). Capacity:38 Source:AC
+2026-03-11 18:25:24.125636-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610239 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:25:24.158012-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610239 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:26:51.096655-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a0) Time:160 Source:AC
+2026-03-11 18:26:51.096662-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0027). Capacity:39 Source:AC
+2026-03-11 18:26:51.125213-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610251 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:26:51.143862-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610251 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 18:28:19.091828-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009f) Time:159 Source:AC
+2026-03-11 18:28:19.091835-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0028). Capacity:40 Source:AC
+2026-03-11 18:28:19.131642-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610263 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:28:19.198889-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610263 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:29:19.063868-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b00a0) Time:160 Source:AC
+2026-03-11 18:29:52.096331-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009f) Time:159 Source:AC
+2026-03-11 18:29:52.096338-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0029). Capacity:41 Source:AC
+2026-03-11 18:29:52.123583-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610295 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:29:52.144218-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610295 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:30:52.092990-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009c) Time:156 Source:AC
+2026-03-11 18:31:20.094387-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009e) Time:158 Source:AC
+2026-03-11 18:31:20.094395-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002a). Capacity:42 Source:AC
+2026-03-11 18:31:20.142774-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610306 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:31:20.275471-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610306 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 18:32:20.063072-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009d) Time:157 Source:AC
+2026-03-11 18:32:47.095123-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b009a) Time:154 Source:AC
+2026-03-11 18:32:47.095129-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002b). Capacity:43 Source:AC
+2026-03-11 18:32:47.121507-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610317 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:32:47.176122-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610317 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:34:18.095728-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002c). Capacity:44 Source:AC
+2026-03-11 18:34:18.152803-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610329 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:34:18.198655-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610329 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:35:47.093835-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0098) Time:152 Source:AC
+2026-03-11 18:35:47.093846-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002d). Capacity:45 Source:AC
+2026-03-11 18:35:47.131558-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610341 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:35:47.392817-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610341 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:36:47.062698-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0099) Time:153 Source:AC
+2026-03-11 18:37:17.092974-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0097) Time:151 Source:AC
+2026-03-11 18:37:17.092982-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002e). Capacity:46 Source:AC
+2026-03-11 18:37:17.113478-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610364 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:37:17.131395-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610364 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:38:46.096676-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0095) Time:149 Source:AC
+2026-03-11 18:38:46.096684-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb002f). Capacity:47 Source:AC
+2026-03-11 18:38:46.136660-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610375 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:38:46.168642-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610375 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:39:46.062183-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0094) Time:148 Source:AC
+2026-03-11 18:40:17.095953-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0095) Time:149 Source:AC
+2026-03-11 18:40:17.095963-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0030). Capacity:48 Source:AC
+2026-03-11 18:40:17.124621-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610415 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:40:17.164344-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610415 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:41:45.091886-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0092) Time:146 Source:AC
+2026-03-11 18:41:45.091893-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0031). Capacity:49 Source:AC
+2026-03-11 18:41:45.118605-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610428 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:41:45.140593-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610428 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:42:45.064957-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0091) Time:145 Source:AC
+2026-03-11 18:43:14.094956-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0032). Capacity:50 Source:AC
+2026-03-11 18:43:14.128450-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610447 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:43:14.171785-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610447 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:44:14.061704-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0092) Time:146 Source:AC
+2026-03-11 18:44:47.093881-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0090) Time:144 Source:AC
+2026-03-11 18:44:47.093890-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0033). Capacity:51 Source:AC
+2026-03-11 18:44:47.122022-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610476 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:44:47.142508-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610476 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:45:47.060451-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008f) Time:143 Source:AC
+2026-03-11 18:46:16.092989-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008e) Time:142 Source:AC
+2026-03-11 18:46:16.092995-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0034). Capacity:52 Source:AC
+2026-03-11 18:46:16.123933-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610488 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:46:16.141012-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610488 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:47:16.057041-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008d) Time:141 Source:AC
+2026-03-11 18:47:45.094479-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0035). Capacity:53 Source:AC
+2026-03-11 18:47:45.115908-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610525 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:47:45.140104-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610525 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:48:45.059252-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008b) Time:139 Source:AC
+2026-03-11 18:49:14.093752-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008d) Time:141 Source:AC
+2026-03-11 18:49:14.093760-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0036). Capacity:54 Source:AC
+2026-03-11 18:49:14.141825-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610544 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:49:14.182981-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610544 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:50:14.056791-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b008a) Time:138 Source:AC
+2026-03-11 18:50:45.094788-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0037). Capacity:55 Source:AC
+2026-03-11 18:50:45.126242-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610554 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:50:45.155036-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610554 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:52:16.094210-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0038). Capacity:56 Source:AC
+2026-03-11 18:52:16.133239-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610569 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:52:16.164521-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610569 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:53:16.055488-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0089) Time:137 Source:AC
+2026-03-11 18:53:48.092707-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0088) Time:136 Source:AC
+2026-03-11 18:53:48.092712-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0039). Capacity:57 Source:AC
+2026-03-11 18:53:48.206469-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610580 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:53:48.398525-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610580 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:55:18.094847-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0084) Time:132 Source:AC
+2026-03-11 18:55:18.094854-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003a). Capacity:58 Source:AC
+2026-03-11 18:55:18.125251-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610596 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:55:18.143633-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610596 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:56:18.066385-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b007d) Time:125 Source:AC
+2026-03-11 18:56:39.094083-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b007b) Time:123 Source:AC
+2026-03-11 18:56:39.094091-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003b). Capacity:59 Source:AC
+2026-03-11 18:56:39.113768-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610608 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:56:39.128869-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610608 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:57:39.060734-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b007a) Time:122 Source:AC
+2026-03-11 18:57:58.099689-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0079) Time:121 Source:AC
+2026-03-11 18:57:58.099697-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003c). Capacity:60 Source:AC
+2026-03-11 18:57:58.117568-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610621 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:57:58.140205-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610621 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 18:58:58.057646-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0077) Time:119 Source:AC
+2026-03-11 18:59:17.094908-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003d). Capacity:61 Source:AC
+2026-03-11 18:59:17.112468-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610669 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 18:59:17.130924-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610669 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:00:17.057467-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0074) Time:116 Source:AC
+2026-03-11 19:00:38.095090-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0073) Time:115 Source:AC
+2026-03-11 19:00:38.095097-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003e). Capacity:62 Source:AC
+2026-03-11 19:00:38.111943-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610701 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:00:38.131768-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610701 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:01:38.062219-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0070) Time:112 Source:AC
+2026-03-11 19:01:58.090021-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb003f). Capacity:63 Source:AC
+2026-03-11 19:01:58.157367-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610713 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:01:58.178113-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610713 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:02:58.061134-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006f) Time:111 Source:AC
+2026-03-11 19:03:16.097100-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0040). Capacity:64 Source:AC
+2026-03-11 19:03:16.130651-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610722 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:03:16.156679-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610722 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:04:16.085887-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006a) Time:106 Source:AC
+2026-03-11 19:04:18.126835-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0041). Capacity:65 Source:AC
+2026-03-11 19:04:18.142223-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610730 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:04:18.162384-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610730 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:05:18.091271-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006b) Time:107 Source:AC
+2026-03-11 19:05:39.124322-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0042). Capacity:66 Source:AC
+2026-03-11 19:05:39.165983-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610765 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:05:39.190152-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610765 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:06:39.091665-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0066) Time:102 Source:AC
+2026-03-11 19:07:00.125626-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0043). Capacity:67 Source:AC
+2026-03-11 19:07:00.150501-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610792 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:07:00.187010-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610792 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 19:08:00.088090-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0064) Time:100 Source:AC
+2026-03-11 19:08:19.126755-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0063) Time:99 Source:AC
+2026-03-11 19:08:19.126761-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0044). Capacity:68 Source:AC
+2026-03-11 19:08:19.153460-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610808 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:08:19.169849-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610808 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:08:55.754271-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 19:08:56.200752-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 19:08:59.946017-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006a) Time:106 Source:AC
+2026-03-11 19:09:56.121669-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0071) Time:113 Source:AC
+2026-03-11 19:09:56.121676-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0045). Capacity:69 Source:AC
+2026-03-11 19:09:56.156205-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610836 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:09:56.170086-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610836 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:10:56.079504-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006e) Time:110 Source:AC
+2026-03-11 19:11:32.117803-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006c) Time:108 Source:AC
+2026-03-11 19:11:32.117809-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0046). Capacity:70 Source:AC
+2026-03-11 19:11:32.148140-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610850 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:11:32.159246-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610850 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:12:32.072634-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006b) Time:107 Source:AC
+2026-03-11 19:13:09.122796-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006f) Time:111 Source:AC
+2026-03-11 19:13:09.122816-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0047). Capacity:71 Source:AC
+2026-03-11 19:13:09.180672-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610860 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:13:09.223607-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610860 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:13:52.001920-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 19:13:52.667884-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 19:13:52.816679-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 19:13:53.369546-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 19:13:54.381909-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: Off NotificationWake : 0
+2026-03-11 19:13:54.422549-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 19:13:54.989340-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 19:13:55.638764-0400  localhost powerd[346]: [com.apple.powerd:systemLoad] Display state: On NotificationWake : 0
+2026-03-11 19:14:09.074178-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0079) Time:121 Source:AC
+2026-03-11 19:15:09.069099-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0083) Time:131 Source:AC
+2026-03-11 19:15:39.121070-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0079) Time:121 Source:AC
+2026-03-11 19:15:39.121079-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0048). Capacity:72 Source:AC
+2026-03-11 19:15:39.200412-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610916 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:15:39.221082-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610916 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:16:39.071797-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0076) Time:118 Source:AC
+2026-03-11 19:17:16.117873-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b006c) Time:108 Source:AC
+2026-03-11 19:17:16.117879-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0049). Capacity:73 Source:AC
+2026-03-11 19:17:16.147041-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610934 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:17:16.161681-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610934 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:18:16.076976-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0062) Time:98 Source:AC
+2026-03-11 19:18:40.111337-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005e) Time:94 Source:AC
+2026-03-11 19:18:40.111342-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004a). Capacity:74 Source:AC
+2026-03-11 19:18:40.131684-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610945 [System: PrevIdle DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:18:40.151577-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610945 [System: PrevIdle DeclUser IntPrevDisp kDisp]
+2026-03-11 19:19:40.107798-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005b) Time:91 Source:AC
+2026-03-11 19:20:24.114501-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0064) Time:100 Source:AC
+2026-03-11 19:20:24.114510-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004b). Capacity:75 Source:AC
+2026-03-11 19:20:24.149038-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610972 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:20:24.167940-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610972 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:21:24.079249-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005a) Time:90 Source:AC
+2026-03-11 19:21:55.117484-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0051) Time:81 Source:AC
+2026-03-11 19:21:55.117491-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004c). Capacity:76 Source:AC
+2026-03-11 19:21:55.129065-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610997 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:21:55.159935-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834610997 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:22:55.067883-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0058) Time:88 Source:AC
+2026-03-11 19:23:31.120322-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0050) Time:80 Source:AC
+2026-03-11 19:23:31.120332-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004d). Capacity:77 Source:AC
+2026-03-11 19:23:31.145763-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611018 [System: PrevIdle DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:23:31.241177-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611018 [System: PrevIdle DeclUser IntPrevDisp kDisp]
+2026-03-11 19:23:51.359015-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b004e) Time:78 Source:AC
+2026-03-11 19:24:51.075193-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0055) Time:85 Source:AC
+2026-03-11 19:25:35.122785-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005d) Time:93 Source:AC
+2026-03-11 19:25:35.122800-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004e). Capacity:78 Source:AC
+2026-03-11 19:25:35.189464-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611053 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:25:35.227789-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611053 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:26:35.072876-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005f) Time:95 Source:AC
+2026-03-11 19:27:35.065021-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0068) Time:104 Source:AC
+2026-03-11 19:27:35.111735-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0072) Time:114 Source:AC
+2026-03-11 19:27:35.111739-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb004f). Capacity:79 Source:AC
+2026-03-11 19:27:35.136310-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611076 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:27:35.161663-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611076 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:28:35.069130-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0068) Time:104 Source:AC
+2026-03-11 19:29:35.067225-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005e) Time:94 Source:AC
+2026-03-11 19:29:39.115211-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005b) Time:91 Source:AC
+2026-03-11 19:29:39.115217-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0050). Capacity:80 Source:AC
+2026-03-11 19:29:39.194958-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611094 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:29:39.205874-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611094 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:30:39.079565-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005d) Time:93 Source:AC
+2026-03-11 19:31:39.072092-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0066) Time:102 Source:AC
+2026-03-11 19:31:48.114246-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0067) Time:103 Source:AC
+2026-03-11 19:31:48.114253-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0051). Capacity:81 Source:AC
+2026-03-11 19:31:48.137688-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611130 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:31:48.159293-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611130 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:32:48.074917-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b005d) Time:93 Source:AC
+2026-03-11 19:33:45.111075-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0062) Time:98 Source:AC
+2026-03-11 19:33:45.111080-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0052). Capacity:82 Source:AC
+2026-03-11 19:33:45.136195-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611151 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:33:45.158768-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611151 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:34:45.083870-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0059) Time:89 Source:AC
+2026-03-11 19:35:34.113340-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0051) Time:81 Source:AC
+2026-03-11 19:35:34.113350-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0053). Capacity:83 Source:AC
+2026-03-11 19:35:34.164622-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611163 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:35:34.199258-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611163 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:36:34.066653-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0049) Time:73 Source:AC
+2026-03-11 19:37:34.068846-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0046) Time:70 Source:AC
+2026-03-11 19:37:39.115743-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0054). Capacity:84 Source:AC
+2026-03-11 19:37:39.133248-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611195 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:37:39.148192-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611195 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:38:39.074508-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b004c) Time:76 Source:AC
+2026-03-11 19:39:39.073083-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0045) Time:69 Source:AC
+2026-03-11 19:39:42.117791-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0041) Time:65 Source:AC
+2026-03-11 19:39:42.117798-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0055). Capacity:85 Source:AC
+2026-03-11 19:39:42.144813-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611248 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:39:42.157639-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611248 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:40:42.068304-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0047) Time:71 Source:AC
+2026-03-11 19:41:42.062153-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0040) Time:64 Source:AC
+2026-03-11 19:41:43.118732-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b003d) Time:61 Source:AC
+2026-03-11 19:41:43.118738-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0056). Capacity:86 Source:AC
+2026-03-11 19:41:43.138248-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611289 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:41:43.151711-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611289 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:42:43.057523-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0043) Time:67 Source:AC
+2026-03-11 19:43:39.117602-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b003d) Time:61 Source:AC
+2026-03-11 19:43:39.117609-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0057). Capacity:87 Source:AC
+2026-03-11 19:43:39.163363-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611318 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:43:39.185959-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611318 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:44:39.067436-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0037) Time:55 Source:AC
+2026-03-11 19:45:32.116143-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0038) Time:56 Source:AC
+2026-03-11 19:45:32.116148-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0058). Capacity:88 Source:AC
+2026-03-11 19:45:32.160620-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611347 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:45:32.201098-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611347 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:46:32.072590-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0033) Time:51 Source:AC
+2026-03-11 19:47:25.122102-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0038) Time:56 Source:AC
+2026-03-11 19:47:25.122108-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0059). Capacity:89 Source:AC
+2026-03-11 19:47:25.164372-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611366 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:47:25.207525-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611366 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:48:25.056260-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0033) Time:51 Source:AC
+2026-03-11 19:49:09.116178-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b002e) Time:46 Source:AC
+2026-03-11 19:49:09.116183-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005a). Capacity:90 Source:AC
+2026-03-11 19:49:09.143788-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611451 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:49:09.160911-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611451 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:50:09.061691-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b002c) Time:44 Source:AC
+2026-03-11 19:51:06.116817-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0028) Time:40 Source:AC
+2026-03-11 19:51:06.116824-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005b). Capacity:91 Source:AC
+2026-03-11 19:51:06.371951-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611470 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:51:06.411803-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611470 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:52:06.066550-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b002c) Time:44 Source:AC
+2026-03-11 19:52:14.001949-0400  localhost powerd[346]: [com.apple.powerd:wakeRequests] Wake timer expired for com.apple.alarm
+2026-03-11 19:53:06.053532-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0028) Time:40 Source:AC
+2026-03-11 19:53:11.116307-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0024) Time:36 Source:AC
+2026-03-11 19:53:11.116313-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005c). Capacity:92 Source:AC
+2026-03-11 19:53:11.136164-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611492 [System: PrevIdle SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:53:11.159932-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611492 [System: PrevIdle IntPrevDisp kDisp]
+2026-03-11 19:54:11.069428-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0021) Time:33 Source:AC
+2026-03-11 19:54:57.123684-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0024) Time:36 Source:AC
+2026-03-11 19:54:57.123688-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005d). Capacity:93 Source:AC
+2026-03-11 19:54:57.145558-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611524 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:54:57.165274-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611524 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 19:55:57.082911-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0021) Time:33 Source:AC
+2026-03-11 19:56:57.057679-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001e) Time:30 Source:AC
+2026-03-11 19:56:58.121132-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001d) Time:29 Source:AC
+2026-03-11 19:56:58.121139-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005e). Capacity:94 Source:AC
+2026-03-11 19:56:58.140402-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611559 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:56:58.174202-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611559 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 19:57:58.063224-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001e) Time:30 Source:AC
+2026-03-11 19:58:58.055260-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001d) Time:29 Source:AC
+2026-03-11 19:59:07.116956-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001f) Time:31 Source:AC
+2026-03-11 19:59:07.116962-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb005f). Capacity:95 Source:AC
+2026-03-11 19:59:07.147958-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611585 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 19:59:07.171338-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611585 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 20:00:07.057410-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001d) Time:29 Source:AC
+2026-03-11 20:01:07.058821-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001e) Time:30 Source:AC
+2026-03-11 20:01:33.110957-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001c) Time:28 Source:AC
+2026-03-11 20:01:33.110963-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0060). Capacity:96 Source:AC
+2026-03-11 20:01:33.155780-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611609 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 20:01:33.169202-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611609 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 20:02:33.047300-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001b) Time:27 Source:AC
+2026-03-11 20:03:33.041871-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b001a) Time:26 Source:AC
+2026-03-11 20:04:22.149600-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0019) Time:25 Source:AC
+2026-03-11 20:04:22.149611-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0061). Capacity:97 Source:AC
+2026-03-11 20:04:22.233275-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611647 [System: PrevIdle PrevDisp DeclUser SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 20:04:22.287587-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611647 [System: PrevIdle PrevDisp DeclUser IntPrevDisp kDisp]
+2026-03-11 20:05:22.076909-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0018) Time:24 Source:AC
+2026-03-11 20:06:22.109873-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0017) Time:23 Source:AC
+2026-03-11 20:07:22.078823-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0016) Time:22 Source:AC
+2026-03-11 20:07:45.142997-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0015) Time:21 Source:AC
+2026-03-11 20:07:45.143003-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery capacity change posted(0xb0062). Capacity:98 Source:AC
+2026-03-11 20:07:45.328968-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Created MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611711 [System: PrevIdle PrevDisp SRPrevSleep IntPrevDisp kCPU kDisp]
+2026-03-11 20:07:45.379728-0400  localhost powerd[346]: [com.apple.powerd:assertions] Process PowerUIAgent.64981 Released MaintenanceWake "com.apple.obc" age:00:00:00  id:55834611711 [System: PrevIdle PrevDisp IntPrevDisp kDisp]
+2026-03-11 20:08:45.034302-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0014) Time:20 Source:AC
+2026-03-11 20:09:45.031615-0400  localhost powerd[346]: [com.apple.powerd:battery] Battery time remaining posted(0x1000000004b0013) Time:19 Source:AC

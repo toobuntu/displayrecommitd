@@ -1,0 +1,4 @@
+displayrecommitd
+*.o
+*.dSYM/
+.DS_Store

@@ -1,0 +1,66 @@
+<!--
+SPDX-FileCopyrightText: Copyright 2026 Todd Schulman
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+# displayrecommitd — project memory
+
+## What this is
+
+Single-file Objective-C LaunchAgent. No Xcode project. Builds with clang directly.
+
+## Problem being solved
+
+macOS fails to re-attach the WindowServer compositor surface to a USB-C external
+display after battery sleep. CoreGraphics and IOKit report the display as fully
+healthy, but window content does not render. The hardware cursor works because it
+is a GPU scanout plane overlay independent of the compositor surface.
+
+## Fix
+
+A no-op CGBeginDisplayConfiguration/CGCompleteDisplayConfiguration transaction
+forces WindowServer to recommit its display configuration graph, re-allocating
+compositor surfaces against the current pipeline. No display sleep required,
+no visible flicker.
+
+## Trigger conditions
+
+Both must be true:
+1. isOnBattery() returns YES at NSWorkspaceWillSleepNotification
+2. isOnBattery() returns YES at NSWorkspaceDidWakeNotification
+
+Clamshell state is NOT checked. The process is suspended during sleep and cannot
+detect whether the lid was closed mid-sleep. Battery at both endpoints covers
+all observed repro paths and is harmless on clean wakes.
+
+## Trigger timing
+
+After qualifying wake, arm a 2s quiet timer reset by every
+CGDisplayReconfigurationCallback event (excluding kCGDisplayBeginConfigurationFlag).
+Fire recommit only after 2s of no events. Display ID churn can last up to ~14s;
+firing mid-churn is ineffective. No public API definitively signals pipeline
+settled; quiet period is correct at the public API level.
+
+## Key files
+
+- displayrecommitd.m — entire implementation
+- io.github.toobuntu.displayrecommitd.plist — LaunchAgent plist
+- Makefile — build, install, uninstall targets
+
+## Logging
+
+Via NSLog → system log (no log file).
+Read: `log show --last 5m --predicate 'process == "displayrecommitd"'`
+
+## Research notes
+
+- displayprobe.m (in blackoutd repo) was the diagnostic tool used to characterise
+  the problem; it is not part of this project
+- pmset displaysleepnow also recovers the display but causes visible flicker;
+  CGConfig no-op is preferable and sufficient
+- Reproduced: MacBook Pro + Dell SP2309W via USB-C→HDMI, macOS 26 Tahoe, battery
+- Not consistently reproduced on AC power
+- Root cause hypothesis: USB-C Alt Mode renegotiation on battery wake leaves a
+  stale compositor surface binding that CGConfig recommit clears; AC power-gating
+  is less aggressive so the pipeline instance survives sleep

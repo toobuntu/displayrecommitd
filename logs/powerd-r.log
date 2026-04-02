@@ -1,0 +1,488 @@
+Timestamp                       (process)[PID]    
+2026-03-11 17:46:28.322083-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:28.335459-0400  localhost powerd[346]: [com.apple.powerd:displayState] Sending clamshell state closed: 0 to WindowServer
+2026-03-11 17:46:28.335883-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestClamshellState: state 1, Received uuid 907
+2026-03-11 17:46:28.335907-0400  localhost powerd[346]: [com.apple.powerd:displayState] ClamshellState. Closed : 0. ClamshellSleepState: isSleepDisabled : 256
+2026-03-11 17:46:28.335908-0400  localhost powerd[346]: [com.apple.powerd:displayState] ClamshellState. Closed : 0. ClamshellSleepState: isSleepDisabled : 256
+2026-03-11 17:46:28.335940-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:28.340309-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 908
+2026-03-11 17:46:28.356479-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 0;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 907;
+} for uuid 907
+2026-03-11 17:46:28.356488-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 907
+2026-03-11 17:46:28.356712-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:28.356722-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:46:28.356740-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:28.812287-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:28.812436-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:46:28.812741-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:28.854482-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 2;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:46:28.854483-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:46:28.864198-0400  localhost powerd[346]: [com.apple.powerd:displayState] Creating assertion to keep device awake while display is on
+2026-03-11 17:46:28.864297-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 908;
+} for uuid 908
+2026-03-11 17:46:28.864303-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 908
+2026-03-11 17:46:29.108203-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:29.108268-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:46:29.160153-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:29.375781-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:33.673594-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:34.903685-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:35.234382-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:35.493361-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:35.493446-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:35.751854-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:36.372863-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationIdleRequestKey = 23747;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 9;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:46:36.372895-0400  localhost powerd[346]: [com.apple.powerd:displayState] Process (23747, <private>) is requesting display idle
+2026-03-11 17:46:36.373032-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 3, Received uuid 909
+2026-03-11 17:46:36.406395-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:36.406414-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:46:36.406446-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:36.922196-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:37.111302-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 0;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:46:37.111304-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:46:37.127745-0400  localhost powerd[346]: [com.apple.powerd:displayState] Releasing prevent sleep while display is on
+2026-03-11 17:46:37.127824-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 0;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 909;
+} for uuid 909
+2026-03-11 17:46:37.127828-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 909
+2026-03-11 17:46:41.009258-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:41.009827-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 910
+2026-03-11 17:46:41.270568-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:41.271127-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 911
+2026-03-11 17:46:41.271406-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:41.272090-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 912
+2026-03-11 17:46:42.150285-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:46:42.150294-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:46:42.150381-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:42.556269-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 2;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:46:42.556274-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:46:42.575412-0400  localhost powerd[346]: [com.apple.powerd:displayState] Creating assertion to keep device awake while display is on
+2026-03-11 17:46:42.575535-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 910;
+} for uuid 910
+2026-03-11 17:46:42.575538-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 910
+2026-03-11 17:46:42.575805-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 911;
+} for uuid 911
+2026-03-11 17:46:42.575807-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 911
+2026-03-11 17:46:42.575908-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 912;
+} for uuid 912
+2026-03-11 17:46:42.575913-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 912
+2026-03-11 17:46:42.576731-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:44.978882-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.237859-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.238060-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.496507-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.496790-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.756069-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:45.756390-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:46.013631-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:46.014041-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:47.389928-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:47.647209-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:47.648790-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:47.907122-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:47.912106-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.165071-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.165634-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.423081-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.423375-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.681995-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:48.682540-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:49.117745-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:49.863645-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:50.055857-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:50.923434-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:51.174615-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:51.657350-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:51.951565-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:52.555193-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:52.667330-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:54.816857-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.077265-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.077381-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.335986-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.336062-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.543895-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:55.544033-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.099212-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.299494-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.490136-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.618109-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.750155-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:56.915152-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.070182-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.195031-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.303164-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.425144-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.588245-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:57.696212-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:58.927122-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:59.097062-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:59.266114-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:46:59.984451-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:01.192021-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:01.394016-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:01.613258-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:01.801983-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.127008-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.267985-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.519126-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.664912-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.773447-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:02.928069-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.103938-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.235942-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.377209-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.501220-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.593048-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.716951-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:03.918906-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:04.340923-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:04.470861-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:04.630235-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:04.818640-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:05.000432-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:07.264253-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:07.407235-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:07.541871-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:07.665828-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:07.829782-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:08.008912-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:08.157748-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:08.334596-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:08.795753-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:09.013918-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:09.242737-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:09.530798-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:09.765726-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:10.250737-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:10.392027-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:10.483617-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:10.715699-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:10.952744-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:12.634769-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:12.790080-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:12.894645-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.071656-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.245892-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.372576-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.486643-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.594775-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.795133-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:13.894791-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:14.762898-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:14.951553-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:15.138614-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:15.331662-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:15.459612-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:15.622521-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:15.893614-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:16.069521-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:16.239456-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:17.180623-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:17.359643-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:17.467605-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:17.702801-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:17.786783-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:18.470860-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:18.628679-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:18.780677-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:19.114589-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:19.519658-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:19.645402-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:19.811534-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:19.966428-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.165415-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.237390-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.406553-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.502540-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.675367-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:20.948310-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.074473-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.158665-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.357358-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.529823-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.643825-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:21.857424-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:22.878690-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:23.153470-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:23.475501-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:23.799279-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.009471-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.166429-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.310368-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.418296-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.611370-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.768329-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:24.844332-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:25.847382-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:25.986114-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:26.123190-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:26.521210-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:26.680123-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:26.825130-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:27.011159-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:27.469233-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:27.714055-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:27.798220-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:27.956076-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:28.113095-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:28.211018-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:28.501044-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:28.758065-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:30.457983-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:30.596174-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:30.722061-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:30.891076-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:31.104923-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:31.220989-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:31.426074-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:31.597058-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.047085-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.350228-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.500005-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.658042-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.790018-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:32.995686-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:33.467973-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:33.639847-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:33.891881-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:34.224885-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:34.522963-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:34.797910-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:34.977834-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:35.133836-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:35.266871-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:35.386958-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:35.775893-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:35.928049-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:37.387841-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:37.959827-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:47:39.272685-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.215561-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.474183-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.474463-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.732822-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.732923-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:14.991493-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:15.387739-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:15.646341-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:15.646437-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:15.904966-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:15.905062-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.163604-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.163691-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.422292-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.681035-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.719138-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:16.719234-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:17.101489-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:17.360239-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:17.360400-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:17.764316-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:18.023075-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:18.023171-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:19.720709-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:19.979359-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:19.979519-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:20.238045-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:20.626315-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.038358-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.268458-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationIdleRequestKey = 23747;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 9;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:48:21.268474-0400  localhost powerd[346]: [com.apple.powerd:displayState] Process (23747, <private>) is requesting display idle
+2026-03-11 17:48:21.268563-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 3, Received uuid 913
+2026-03-11 17:48:21.305133-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.317311-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:48:21.317334-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:48:21.317437-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.581194-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.582809-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.774642-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 0;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:48:21.774752-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:48:21.887884-0400  localhost powerd[346]: [com.apple.powerd:displayState] Releasing prevent sleep while display is on
+2026-03-11 17:48:21.888013-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 0;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 913;
+} for uuid 913
+2026-03-11 17:48:21.888016-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 913
+2026-03-11 17:48:21.889183-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:21.896069-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 914
+2026-03-11 17:48:22.119424-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.221885-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 915
+2026-03-11 17:48:22.280000-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:48:22.280090-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:48:22.280603-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.280769-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.287436-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 2, Received uuid 916
+2026-03-11 17:48:22.356656-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 2;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:48:22.356663-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:48:22.389838-0400  localhost powerd[346]: [com.apple.powerd:displayState] Creating assertion to keep device awake while display is on
+2026-03-11 17:48:22.389981-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 914;
+} for uuid 914
+2026-03-11 17:48:22.389985-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 914
+2026-03-11 17:48:22.395846-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.497158-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 915;
+} for uuid 915
+2026-03-11 17:48:22.497168-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 915
+2026-03-11 17:48:22.525619-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 2;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 916;
+} for uuid 916
+2026-03-11 17:48:22.525632-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 916
+2026-03-11 17:48:22.525664-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.631972-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.632200-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.889742-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.890143-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:22.918012-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:23.229656-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:23.231202-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:27.940393-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:30.186068-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode check on Battery 0
+2026-03-11 17:48:30.292626-0400  localhost powerd[346]: [com.apple.powerd:displayState] ClamshellState. Closed : 0. ClamshellSleepState: isSleepDisabled : 0
+2026-03-11 17:49:05.191628-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationIdleRequestKey = 23747;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 9;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:49:05.191730-0400  localhost powerd[346]: [com.apple.powerd:displayState] Process (23747, <private>) is requesting display idle
+2026-03-11 17:49:05.191821-0400  localhost powerd[346]: [com.apple.powerd:displayState] requestDisplayState: state 3, Received uuid 917
+2026-03-11 17:49:05.238142-0400  localhost powerd[346]: [com.apple.powerd:displayState] DesktopMode set 1 with battery 0
+2026-03-11 17:49:05.238161-0400  localhost powerd[346]: [com.apple.powerd:displayState] EvaluateClamshellSleepState on DesktopMode update
+2026-03-11 17:49:05.632785-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     (
+                {
+            SLSDisplayControlNotificationLogicalDisplaysState = 0;
+        }
+    );
+    SLSDisplayControlNotificationPayloadTypeKey = 2;
+    SLSDisplayControlNotificationTypeKey = 8;
+    SLSDisplayControlNotificationUUIDKey = 0;
+} for uuid 0
+2026-03-11 17:49:05.632788-0400  localhost powerd[346]: [com.apple.powerd:displayState] Recevied broadcast notification
+2026-03-11 17:49:06.053897-0400  localhost powerd[346]: [com.apple.powerd:displayState] Releasing prevent sleep while display is on
+2026-03-11 17:49:06.055805-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received WindowServer call back {
+    SLSDisplayControlNotificationPayloadKey =     {
+        SLSDisplayControlNotificationStateKey = 0;
+    };
+    SLSDisplayControlNotificationPayloadTypeKey = 3;
+    SLSDisplayControlNotificationTypeKey = 2;
+    SLSDisplayControlNotificationUUIDKey = 917;
+} for uuid 917
+2026-03-11 17:49:06.055811-0400  localhost powerd[346]: [com.apple.powerd:displayState] Received callback for uuid 917

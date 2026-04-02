@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: make
+
+      - name: Verify binary
+        run: |
+          file displayrecommitd | grep --quiet Mach-O
+          codesign --verify displayrecommitd
+
+  lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check formatting
+        run: clang-format --dry-run --Werror displayrecommitd.m
+
+  lint-reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: REUSE compliance
+        uses: fsfe/reuse-action@v4
