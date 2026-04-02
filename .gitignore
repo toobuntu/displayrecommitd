@@ -8,6 +8,7 @@ displayrecommitd
 files*.zip
 files*/
 logs/
+private/
 *.o
 *.dSYM/
 .DS_Store

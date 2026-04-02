@@ -13,9 +13,9 @@ LOG_PATH    = $(shell /usr/libexec/PlistBuddy \
 UID         = $(shell id -u)
 
 CC     = clang
-CFLAGS = -fobjc-arc -Wall -Wextra -Os -framework Cocoa -framework IOKit
+CFLAGS = -fobjc-arc -Wall -Wextra -Os -framework Cocoa
 
-.PHONY: all clean install uninstall zap load unload
+.PHONY: all clean install reinstall uninstall zap load unload
 
 all: $(BINARY)
 
@@ -31,6 +31,14 @@ install: $(BINARY)
 	sudo install -d /usr/local/bin
 	sudo install -m 755 $(BINARY) $(INSTALL_BIN)
 	install -d $(AGENT_DIR)
+	install -m 644 $(AGENT_PLIST) $(AGENT_DST)
+	launchctl bootstrap gui/$(UID) $(AGENT_DST)
+
+# Reinstall binary and plist, then restart agent.
+#   make clean; make; make reinstall
+reinstall: $(BINARY)
+	-launchctl bootout gui/$(UID)/$(BUNDLE_ID) || true
+	sudo install -m 755 $(BINARY) $(INSTALL_BIN)
 	install -m 644 $(AGENT_PLIST) $(AGENT_DST)
 	launchctl bootstrap gui/$(UID) $(AGENT_DST)
 

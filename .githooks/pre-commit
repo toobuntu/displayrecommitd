@@ -1,0 +1,63 @@
+#!/bin/sh
+# SPDX-FileCopyrightText: 2026 toobuntu
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+set -e
+
+staged() { git diff --cached --name-only --diff-filter=ACM | grep -E "$1" || true; }
+
+# Format staged Objective-C source files in place and re-stage.
+objc_files=$(staged '\.(m|h)$')
+if [ -n "$objc_files" ]; then
+    printf '%s\n' "$objc_files" | while IFS= read -r f; do
+        xcrun clang-format --style=file --Werror -i "$f"
+        git add "$f"
+    done
+fi
+
+# Validate staged plists.
+plist_files=$(staged '\.plist$')
+if [ -n "$plist_files" ]; then
+    printf '%s\n' "$plist_files" | while IFS= read -r f; do
+        plutil -lint "$f"
+    done
+fi
+
+# Lint staged workflow files with actionlint if available.
+workflow_files=$(staged '\.github/workflows/.*\.yml$')
+if [ -n "$workflow_files" ]; then
+    if command -v actionlint >/dev/null 2>&1; then
+        printf '%s\n' "$workflow_files" | xargs actionlint
+    else
+        echo "warning: actionlint not found — skipping workflow lint (brew install actionlint)"
+    fi
+fi
+
+# REUSE compliance check.
+if ! reuse lint --quiet; then
+    reuse lint
+    cat >&2 << 'HINT'
+
+To annotate unannotated files, run:
+
+  files=$(reuse lint --json \
+    | jq -r '.non_compliant
+      | add(.missing_copyright_info, .missing_licensing_info)
+      | unique[]')
+
+  if [ -n "$files" ]; then
+    annotate() {
+        xargs -r reuse annotate \
+            --copyright="Todd Schulman" \
+            --merge-copyrights \
+            --license=GPL-3.0-or-later \
+            --copyright-prefix=spdx-string \
+            "$@"
+    }
+
+    printf '%s\n' "$files" | grep -E '\.(m|h)$'  | annotate --style=c
+    printf '%s\n' "$files" | grep -vE '\.(m|h)$' | annotate --fallback-dot-license
+  fi
+HINT
+    exit 1
+fi

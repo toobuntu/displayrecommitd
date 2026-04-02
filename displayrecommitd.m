@@ -4,70 +4,68 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-// displayrecommitd — macOS LaunchAgent to recover external display rendering
-// after battery sleep.
+// displayrecommitd — macOS LaunchAgent to recover an external USB-C display
+// that goes black shortly after wake when the built-in display is suppressed.
 //
 // Background:
-//   On macOS, when a MacBook sleeps on battery power with a USB-C connected
-//   external display (via HDMI or DisplayPort adapter), the USB-C controller
-//   is power-gated more aggressively than on AC power. This causes the
-//   adapter to lose its Alt Mode negotiation state.
+//   With a USB-C external display connected via an HDMI or DisplayPort adapter
+//   and the built-in display suppressed (e.g. by blackoutd, BetterDisplay, or
+//   Lunar), waking from sleep produces a black external display with only a
+//   mouse cursor visible. The failure does not happen immediately on wake —
+//   the display comes up briefly, then drops approximately 30 seconds later.
 //
 //   USB-C Alt Mode (Alternate Mode) is a USB-C specification feature that
-//   allows the connector to carry non-USB signals — DisplayPort, HDMI — by
-//   repurposing some of its wire pairs. A USB-C→HDMI adapter uses Alt Mode
-//   to route display signals through the USB-C port. The battery-vs-AC
-//   difference in power-gating causes this negotiation to be dropped more
-//   aggressively on battery sleep.
+//   repurposes some of the connector's wire pairs to carry DisplayPort or HDMI
+//   signals. On wake, when the built-in display is suppressed and the USB-C
+//   adapter is the sole display path, the USB-C controller drops its Alt Mode
+//   negotiation state approximately 30 seconds after wake. WindowServer
+//   registers this as a hotplug-out event (the display physically disconnects
+//   at the protocol level) and does not automatically recover it.
 //
-//   On wake, the display re-enumerates cleanly — CoreGraphics and IOKit
-//   report it as fully active and healthy — but WindowServer's compositor
-//   surface fails to re-attach to the new display pipeline instance.
-//
-//   The result: the display wakes to a black screen with a fully functional
-//   hardware cursor. The cursor works because it is a GPU scanout plane
-//   overlay programmed directly into hardware registers, independent of
-//   the compositor surface. Window content does not render because
-//   WindowServer is not painting to the display, despite believing it is.
+//   The result: the display goes black with only a hardware cursor visible.
+//   The cursor works because it is a GPU scanout plane overlay programmed
+//   directly into hardware registers, independent of the display pipeline.
 //
 // Fix:
 //   A no-op CGBeginDisplayConfiguration/CGCompleteDisplayConfiguration
-//   transaction forces WindowServer to recommit its display configuration
-//   graph, re-allocating the compositor surface against the current pipeline
-//   instance. This recovers the display with no visible flicker and no
-//   display power cycle required.
+//   transaction forces WindowServer to re-evaluate the display configuration
+//   graph after the pipeline has resettled. By the time the quiet timer fires
+//   (2 seconds after the last pipeline event), Alt Mode has re-established and
+//   the display has re-enumerated. The CGConfig cycle causes WindowServer to
+//   properly absorb the reconnected display. No visible flicker, no display
+//   power cycle required.
 //
-// Trigger conditions:
-//   Battery power at sleep time and battery power at wake time.
+// Trigger:
+//   Any user wake. The battery-at-sleep condition previously used here was
+//   coincidental — the Alt Mode dropout occurs regardless of power source when
+//   the built-in is suppressed. The CGConfig transaction is a no-op when no
+//   dropout has occurred, so firing on every wake is safe.
 //
-//   Closing the lid can initiate sleep, or sleep can be initiated by other
-//   means (menu, pmset, inactivity timeout) with the lid closed afterward.
-//   There is no way to detect mid-sleep lid state: the process is suspended
-//   during sleep and cannot receive notifications or poll IOKit. The
-//   clamshell condition is therefore not checked — triggering on battery
-//   at both endpoints is sufficient and covers all lid-closure variants.
-//   The recommit transaction is cheap and silent on clean wakes.
+//   blackoutd, which knows whether it has suppressed the built-in, is the
+//   topology-aware implementation of this fix. displayrecommitd is a
+//   standalone fallback for systems running other display suppression tools.
 //
 // Trigger timing:
 //   CGDisplayRegisterReconfigurationCallback fires for every display pipeline
-//   event. After a qualifying wake, a 2-second quiet timer is armed and
-//   resets on each event. The recommit fires only after 2 seconds pass with
-//   no further events, ensuring the display pipeline has fully settled.
-//   Firing mid-churn (during display ID reassignment) produces no benefit.
-//   Display pipeline churn has been observed to last up to ~14 seconds.
+//   event. On wake, a 2-second quiet timer is armed and resets on each event.
+//   The recommit fires only after 2 seconds pass with no further events.
+//   This ensures the display has re-enumerated after the Alt Mode dropout
+//   before the CGConfig cycle fires. Firing during active churn produces no
+//   benefit. Pipeline churn has been observed to last up to ~14 seconds.
 //
 //   There is no public API that definitively signals pipeline settled; the
-//   quiet period is the correct approach at the public API level. A deeper
-//   signal would require private IOKit display service APIs.
+//   quiet period is the correct approach at the public API level.
 //
 // Scope:
-//   Tested on MacBook Pro with Dell SP2309W via USB-C→HDMI, macOS 26 Tahoe.
-//   Likely affects any Mac with a USB-C connected external display on battery
-//   sleep. The AC power case has been observed once but cannot be consistently
-//   reproduced; the battery condition may not catch it.
+//   Tested on MacBook Air with Dell SP2309W via USB-C→HDMI, macOS 26 Tahoe,
+//   with built-in display suppressed by blackoutd.
+//   Likely affects any Mac with a USB-C external display as the sole active
+//   display (built-in suppressed by any means).
+//   A separate but symptomatically similar failure has been reported with
+//   BetterDisplay virtual displays; that failure may have a different cause.
 //
 // Compile:
-//   clang -fobjc-arc -framework Cocoa -framework IOKit \
+//   clang -fobjc-arc -framework Cocoa \
 //         -o displayrecommitd displayrecommitd.m
 //
 // Install:
@@ -77,28 +75,13 @@
 //     ~/Library/LaunchAgents/io.github.toobuntu.displayrecommitd.plist
 
 #import <Cocoa/Cocoa.h>
-#import <IOKit/IOKitLib.h>
-#import <IOKit/ps/IOPSKeys.h>
-#import <IOKit/ps/IOPowerSources.h>
 
 static const NSTimeInterval kQuietInterval = 2.0;
 
-// MARK: - System State
-
-static BOOL isOnBattery(void) {
-    CFTypeRef info = IOPSCopyPowerSourcesInfo();
-    if (!info)
-        return NO;
-    CFStringRef source = IOPSGetProvidingPowerSourceType(info);
-    BOOL result = source && [(__bridge NSString *)source isEqualToString:@kIOPSBatteryPowerValue];
-    CFRelease(info);
-    return result;
-}
-
 // MARK: - Recommit
 
-// Forces WindowServer to recommit the display configuration graph,
-// re-allocating compositor surfaces against current pipeline instances.
+// Forces WindowServer to re-evaluate the display configuration graph after
+// the display pipeline has resettled following a USB-C Alt Mode dropout.
 // Returns YES on success.
 static BOOL recommitDisplayConfiguration(void) {
     CGDisplayConfigRef config;
@@ -119,7 +102,6 @@ static void reconfigCallback(CGDirectDisplayID display, CGDisplayChangeSummaryFl
 @end
 
 @implementation Agent {
-    BOOL _sleepOnBattery;
     BOOL _recommitPending;
     NSTimer *_quietTimer;
 }
@@ -145,19 +127,13 @@ static void reconfigCallback(CGDirectDisplayID display, CGDisplayChangeSummaryFl
 }
 
 - (void)systemWillSleep:(NSNotification *)note {
-    _sleepOnBattery = isOnBattery();
     [self cancelRecommit];
-    NSLog(@"[sleep] battery=%s", _sleepOnBattery ? "yes" : "no");
+    NSLog(@"[sleep]");
 }
 
 - (void)systemDidWake:(NSNotification *)note {
-    BOOL batteryAtWake = isOnBattery();
-    BOOL qualifying = _sleepOnBattery && batteryAtWake;
-    NSLog(@"[wake] battery_sleep=%s battery_wake=%s%s", _sleepOnBattery ? "yes" : "no",
-          batteryAtWake ? "yes" : "no", qualifying ? " — arming recommit" : "");
-    if (qualifying) {
-        [self armRecommit];
-    }
+    NSLog(@"[wake] arming recommit");
+    [self armRecommit];
 }
 
 - (void)displayReconfigured {
