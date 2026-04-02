@@ -7,26 +7,24 @@ name: Bug report
 about: Report a display compositor failure or unexpected behavior
 ---
 
-**Mac model and macOS version**
+**Run these commands immediately after the issue occurs and paste the output:**
 
-<!-- e.g. MacBook Pro 14-inch 2023, macOS 15.3 -->
-
-**Display and connection type**
-
-<!-- e.g. Dell U2722D via USB-C→DisplayPort adapter, or native Thunderbolt -->
-
-**Power source at sleep and wake**
-
-<!-- e.g. battery at sleep, battery at wake -->
-
-**Steps to reproduce**
-
-<!-- What you did before the failure appeared -->
-
-**Log output**
-
-```
+```sh
+system_profiler SPHardwareDataType SPDisplaysDataType -detailLevel mini
+sw_vers
+uname -m
+pmset -g log | grep -E "Sleep|Wake|Clamshell" | tail -30
 log show --last 5m --predicate 'process == "displayrecommitd"'
 ```
 
-<!-- Paste output here -->
+**Describe what happened**
+
+<!-- What you observed — black screen, cursor visible, how you recovered it -->
+
+**Display connection type**
+
+<!-- e.g. USB-C→HDMI adapter, native Thunderbolt, DisplayPort cable -->
+
+**Was displayrecommitd running at the time?**
+
+<!-- Check: launchctl print gui/$(id -u)/io.github.toobuntu.displayrecommitd -->
